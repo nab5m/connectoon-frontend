@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
 
 body {
@@ -10,11 +10,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
 h1 { font-size: 23px; }
 h2 { font-size: 20px; }
 
-ul, ol {
+h1, h2, h3, h4, h5, h6, p, ul, ol {
     margin: 0;
     padding: 0;
 }

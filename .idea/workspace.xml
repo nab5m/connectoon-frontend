@@ -1,9 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3378513f-3a68-4382-bc7e-0653ee0ab9a9" name="Default Changelist" comment="Banner 컴포넌트 스타일링">
+      <change afterPath="$PROJECT_DIR$/src/components/css/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="nab5m &lt;sk990420@naver.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZLAK436MnkUfSnahB1iW4SkzBS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RunManager">
+    <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="리액트 라우터 구성(Login/Register)">
+      <created>1584610312738</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584610312738</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Header 컴포넌트 스타일링">
+      <created>1584615468215</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584615468216</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Header nav vertical center">
+      <created>1584615761426</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584615761427</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3378513f-3a68-4382-bc7e-0653ee0ab9a9" name="Default Changelist" comment="" />
+      <created>1584616274221</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584616274221</updated>
+      <workItem from="1584616279700" duration="1703000" />
+    </task>
+    <task id="LOCAL-00004" summary="Banner 컴포넌트 스타일링&#10;&#10;- 배경 이미지 추가 필요">
+      <created>1584617130549</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584617130549</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update Banner text">
+      <created>1584617646359</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584617646360</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="리액트 라우터 구성(Login/Register)" />
+    <MESSAGE value="Header 컴포넌트 스타일링" />
+    <MESSAGE value="Header nav vertical center" />
+    <MESSAGE value="Banner 컴포넌트 스타일링&#10;&#10;- 배경 이미지 추가 필요" />
+    <MESSAGE value="update Banner text" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Banner text" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584616368610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584616368610" />
+    <state x="579" y="109" key="CommitChangelistDialog2" timestamp="1584617645266">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="579" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584617645266" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1584617059700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584617059700" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1584617059700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584617059700" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1584617059699">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584617059699" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1584617059700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584617059700" />
   </component>
 </project>
