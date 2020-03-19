@@ -1,0 +1,43 @@
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    box-sizing: border-box;
+    width: 600px;
+    padding: 24px 60px 40px 60px;
+    margin: 0 auto;
+}
+
+form h1 {
+    text-align: center;
+}
+
+form label {
+    padding: 20px 14px;
+    font-weight: bold;
+}
+
+form button {
+    height: 56px;
+    font-size: 16px;
+
+    box-shadow: none;
+    border: none;
+
+    margin-bottom: 10px;
+}
+
+form input {
+    padding: 12px 10px;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.register-button {
+    border: 1px solid #43e39f;
+}
+.login-button {
+    border: 1px solid white;
+}
