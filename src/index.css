@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
 
 body {
     margin: 0;
@@ -30,6 +31,9 @@ li {
 }
 .black {
     color: #000;
+}
+.white {
+    color: #fff;
 }
 
 a {
