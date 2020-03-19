@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    padding: 23px 100px;
+}
+
+.header h1, .header nav, .header li {
+    display: inline-block;
+}
+
+.header nav {
+    margin-left: auto;
+}
+
+.header li {
+    margin-left: 80px;
+}
