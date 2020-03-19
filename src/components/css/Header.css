@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    padding: 23px 100px;
+}
+
+.header h1, .header li {
+    display: inline-block;
+}
+
+.header nav {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header li {
+    margin-left: 80px;
+}

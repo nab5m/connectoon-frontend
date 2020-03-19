@@ -1,0 +1,102 @@
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    box-sizing: border-box;
+    width: 600px;
+    padding: 24px 60px 40px 60px;
+    margin: 0 auto;
+}
+
+form h1 {
+    text-align: center;
+}
+
+form label {
+    padding: 10px 14px;
+    font-weight: bold;
+}
+
+form button {
+    width: 100%;
+    height: 56px;
+
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+
+    box-shadow: none;
+    border: none;
+
+    margin-bottom: 10px;
+}
+
+form input {
+    box-sizing: border-box;
+    padding: 12px 10px;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.border-aqua-marine {
+    border: 1px solid #43e39f;
+}
+
+.login-title {
+    margin-bottom: 80px;
+}
+.register-title {
+    margin-bottom: 60px;
+}
+
+.user-role-container {
+    padding: 60px 70px;
+}
+
+.user-role {
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+}
+.user-role:first-child {
+    margin-right: 60px;
+}
+
+.icon-wrapper {
+    display: flex;
+    height: 130px;
+    margin-bottom: 15px;
+    border-radius: 65px;
+    border: 2px solid #e6e6e6;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.icon-wrapper.selected {
+    border: none;
+    box-shadow: 1px 1px 10px 0 rgba(67, 227, 159, 0.28);
+}
+
+.email-input-container input, .email-input-container div, .email-input-container select {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.email-input-container input {
+     width: 265px;
+}
+.email-input-container div {
+    width: 45px;
+    text-align: center;
+}
+.email-input-container select {
+    width: 160px;
+    border: 1px solid #e0e0e0;
+}
+
+.email-input-container select:invalid {
+    color: #a0a0a0;
+}

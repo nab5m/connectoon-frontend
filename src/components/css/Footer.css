@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    padding: 23px 100px;
+
+    align-items: center;
+}
+
+.footer h1 {
+    margin-right: 48px;
+}
+
+.footer p {
+    font-size: 9px;
+    font-weight: normal;
+    line-height: 17px;
+}
