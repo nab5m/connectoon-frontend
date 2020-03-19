@@ -8,7 +8,7 @@ import FormContainer from "../components/login-register/FormContainer";
 const Register = () => {
     return (
         <Fragment>
-            <Header />
+            <Header activeNavigation={3} />
             <Banner />
             <FormContainer>
                 <RegisterForm />
