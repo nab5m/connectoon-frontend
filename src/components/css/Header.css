@@ -3,11 +3,13 @@
     padding: 23px 100px;
 }
 
-.header h1, .header nav, .header li {
+.header h1, .header li {
     display: inline-block;
 }
 
 .header nav {
+    display: inline-flex;
+    align-items: center;
     margin-left: auto;
 }
 
