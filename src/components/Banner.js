@@ -9,7 +9,7 @@ const Banner = () => {
                 웹툰작가를 연결하다. 커넥툰
             </div>
             <div className={classNames("banner-description", "aqua-marine")}>
-                connect <span className="white">+</span> web
+                connect <span className="white">+</span> webtoon
             </div>
         </section>
     );
