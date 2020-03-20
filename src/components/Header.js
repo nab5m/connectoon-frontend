@@ -1,9 +1,10 @@
 import React from "react";
 import classNames from 'classnames';
+import { withCookies } from 'react-cookie';
 import {NavLink} from "react-router-dom";
 import './css/Header.css';
 
-const Header = ({activeNavigation = -1}) => {
+const Header = ({activeNavigation = -1, cookies}) => {
     let navigation = null;
     let navigationItems = [
         {url: "/", title: "작품보기", active: false},
@@ -11,10 +12,15 @@ const Header = ({activeNavigation = -1}) => {
         {url: "/new-webtoon", title: "탄생웹툰", active: false},
         {url: "/login", title: "로그인/회원가입", active: false},
     ];
+    const token = cookies.get('token');
 
     if(activeNavigation !== -1) {
         // '/register' 페이지를 위한 로직
         navigationItems[activeNavigation].active = true;
+    }
+    if(token) {
+        navigationItems.pop();
+        navigationItems.push({url: "/logout", title: "로그아웃", active: false});
     }
     navigation = navigationItems.map(item => (
         item.active ? <li><NavLink exact to={ item.url } className="aqua-marine">{ item.title }</NavLink></li>
@@ -36,4 +42,4 @@ const Header = ({activeNavigation = -1}) => {
     );
 };
 
-export default Header;
+export default withCookies(Header);
