@@ -100,3 +100,7 @@ form input {
 .email-input-container select:invalid {
     color: #a0a0a0;
 }
+
+.error-text {
+    padding: 14px;
+}

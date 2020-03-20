@@ -5,13 +5,13 @@ import LoginForm from "../components/login-register/LoginForm";
 import Banner from "../components/Banner";
 import FormContainer from "../components/login-register/FormContainer";
 
-const Login = () => {
+const Login = ({history}) => {
     return (
         <Fragment>
             <Header />
             <Banner />
             <FormContainer>
-                <LoginForm />
+                <LoginForm history={history} />
             </FormContainer>
             <Footer />
         </Fragment>

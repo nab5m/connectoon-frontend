@@ -1,12 +1,15 @@
 import React from 'react';
 import {BrowserRouter} from "react-router-dom";
 import App from "../shared/App";
+import {CookiesProvider} from "react-cookie";
 
 const Root = () => {
     return (
-        <BrowserRouter>
-            <App/>
-        </BrowserRouter>
+        <CookiesProvider>
+            <BrowserRouter>
+                <App/>
+            </BrowserRouter>
+        </CookiesProvider>
     );
 };
 
