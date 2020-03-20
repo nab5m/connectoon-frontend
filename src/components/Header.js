@@ -7,7 +7,7 @@ import './css/Header.css';
 const Header = ({activeNavigation = -1, cookies}) => {
     let navigation = null;
     let navigationItems = [
-        {url: "/", title: "작품보기", active: false},
+        {url: "/artwork", title: "작품보기", active: false},
         {url: "/find-author", title: "작가찾기", active: false},
         {url: "/new-webtoon", title: "탄생웹툰", active: false},
         {url: "/login", title: "로그인/회원가입", active: false},
