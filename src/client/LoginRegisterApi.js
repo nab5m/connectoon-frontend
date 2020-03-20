@@ -46,7 +46,7 @@ const handleRegisterRequest = (role, username, password, name, email) => {
     return axios.post(url, data).then(response => {
         return {success: true, data: response.data.token};
     }).catch(error => {
-        return {success: false, data: error.response};
+        return {success: false, data: error.response.data};
     });
 };
 

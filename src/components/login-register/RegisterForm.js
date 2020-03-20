@@ -8,7 +8,7 @@ const RegisterForm = ({history, cookies}) => {
     const STORY_AUTHOR_ID = 1;
     const IMAGE_AUTHOR_ID = 2;
     const [role, setRole] = useState(STORY_AUTHOR_ID);
-    const [error, setError] = useState(false);
+    const [error, setError] = useState({});
 
     const changeRole = (selectedRole) => {
         if(role !== selectedRole) {
@@ -31,10 +31,16 @@ const RegisterForm = ({history, cookies}) => {
                 history.push('/');
                 finishLoginRegisterRequest();
             } else {
-                console.log(result.data);
+                setError(result.data);
             }
         });
-    }
+    };
+
+    const errorMessage = Object.keys(error).map((fieldName, idx) => {
+        return (<p key={idx} className={classNames("aqua-marine")}>
+            {error[fieldName]}
+        </p>);
+    });
 
     return (
         <form className={classNames("register-form")} onSubmit={handleSubmit}>
@@ -73,20 +79,44 @@ const RegisterForm = ({history, cookies}) => {
                 </div>
             </div>
 
+            <div className="error-text">{ errorMessage }</div>
+
             <label htmlFor="username" className={classNames("black")}>아이디</label>
-            <input name="username" type="text" placeholder="아이디를 입력해주세요." required />
+            <input
+                name="username"
+                type="text"
+                placeholder="아이디를 입력해주세요."
+                className={ error.username ? classNames("border-aqua-marine") : ''}
+                required
+            />
 
             <label htmlFor="password" className={classNames("black")}>비밀번호</label>
-            <input name="password" type="password" placeholder="비밀번호를 입력해주세요." required />
+            <input
+                name="password"
+                type="password"
+                placeholder="비밀번호를 입력해주세요."
+                className={ error.password ? classNames("border-aqua-marine") : ''}
+                required
+            />
 
             <label htmlFor="name" className={classNames("black")}>이름</label>
             <input name="name" type="text" placeholder="이름을 입력해주세요." required />
 
             <label htmlFor="email" className={classNames("black")}>이메일</label>
             <div className={classNames("email-input-container")}>
-                <input name="email" type="text" placeholder="이메일을 입력해주세요." />
+                <input
+                    name="email"
+                    type="text"
+                    placeholder="이메일을 입력해주세요."
+                    className={ error.email ? classNames("border-aqua-marine") : ''}
+                />
                 <div>@</div>
-                <select name="domain" defaultValue="" required>
+                <select
+                    name="domain"
+                    defaultValue=""
+                    className={ error.email ? classNames("border-aqua-marine") : ''}
+                    required
+                >
                     <option value="" disabled hidden className={classNames("gray")}>
                         선택하기
                     </option>

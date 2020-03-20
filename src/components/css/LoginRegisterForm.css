@@ -27,7 +27,7 @@ form button {
     font-weight: bold;
 
     box-shadow: none;
-    border: none;
+    border: 1px solid;
 
     margin-bottom: 10px;
 }
@@ -38,10 +38,6 @@ form input {
     margin-bottom: 40px;
     border: none;
     border-bottom: 1px solid #dbdbdb;
-}
-
-.border-aqua-marine {
-    border: 1px solid #43e39f;
 }
 
 .login-title {

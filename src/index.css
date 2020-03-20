@@ -32,7 +32,7 @@ li {
 .bg-black { background-color: #000; }
 .bg-white { background-color: #fff; }
 
-.border-aqua-marine { border-color: #43e39f; }
+.border-aqua-marine { border-color: #43e39f !important; }
 
 a {
     color: inherit;
