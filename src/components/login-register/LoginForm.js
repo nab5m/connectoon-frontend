@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import '../css/LoginRegisterForm.css';
 import classNames from 'classnames';
 import {NavLink} from "react-router-dom";
-import {handleLoginRequest} from "../../client/LoginRegisterApi";
+import {finishLoginRegisterRequest, handleLoginRequest} from "../../client/LoginRegisterApi";
 import { withCookies } from 'react-cookie';
 
 const LoginForm = ({history, cookies}) => {
@@ -24,6 +24,7 @@ const LoginForm = ({history, cookies}) => {
                     } */
                 );
                 history.push('/');
+                finishLoginRegisterRequest();
             } else {
                 setError(true);
             }

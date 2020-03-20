@@ -15,7 +15,7 @@ const Register = ({history, cookies}) => {
             <Header activeNavigation={3} />
             <Banner />
             <FormContainer>
-                <RegisterForm />
+                <RegisterForm history={history} />
             </FormContainer>
             <Footer />
         </Fragment>
