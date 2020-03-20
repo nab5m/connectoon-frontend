@@ -19,4 +19,12 @@ const handleLoginRequest = (username, password) => {
     });
 };
 
+const redirectLoggedInUser = (cookies, history) => {
+    if(cookies.get('token')) {
+        alert('이미 로그인한 사용자입니다');
+        history.push('/');
+    }
+};
+
 export {handleLoginRequest};
+export {redirectLoggedInUser};

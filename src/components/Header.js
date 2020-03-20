@@ -22,9 +22,9 @@ const Header = ({activeNavigation = -1, cookies}) => {
         navigationItems.pop();
         navigationItems.push({url: "/logout", title: "로그아웃", active: false});
     }
-    navigation = navigationItems.map(item => (
-        item.active ? <li><NavLink exact to={ item.url } className="aqua-marine">{ item.title }</NavLink></li>
-            : <li><NavLink exact to={ item.url } activeClassName="aqua-marine">{ item.title }</NavLink></li>
+    navigation = navigationItems.map((item, idx) => (
+        item.active ? <li key={idx}><NavLink exact to={ item.url } className="aqua-marine">{ item.title }</NavLink></li>
+            : <li key={idx}><NavLink exact to={ item.url } activeClassName="aqua-marine">{ item.title }</NavLink></li>
     ));
 
     return (
