@@ -2,10 +2,11 @@ import React, {useState} from 'react';
 import '../css/LoginRegisterForm.css';
 import classNames from 'classnames';
 import {NavLink} from "react-router-dom";
-import {finishLoginRegisterRequest, handleLoginRequest} from "../../client/LoginRegisterApi";
-import { withCookies } from 'react-cookie';
+import {observer} from "mobx-react";
+import useStores from "../../stores/useStores";
 
-const LoginForm = ({history, cookies}) => {
+const LoginForm = () => {
+    const { loginRegisterStore } = useStores();
     const [error, setError] = useState(false);
 
     const handleSubmit = (e) => {
@@ -14,18 +15,8 @@ const LoginForm = ({history, cookies}) => {
         const username = e.target.querySelector('input[name=username]').value;
         const password = e.target.querySelector('input[name=password]').value;
 
-        handleLoginRequest(username, password).then((result) => {
-            if(result.success) {
-                cookies.set(
-                    'token',
-                    result.data,
-                    /* {    로컬호스트에서는 동작하지 않습니다
-                        httpOnly: true
-                    } */
-                );
-                history.push('/');
-                finishLoginRegisterRequest();
-            } else {
+        loginRegisterStore.handleLoginRequest(username, password).then((result) => {
+            if(!result.success) {
                 setError(true);
             }
         });
@@ -73,4 +64,4 @@ const LoginForm = ({history, cookies}) => {
     );
 };
 
-export default withCookies(LoginForm);
+export default observer(LoginForm);

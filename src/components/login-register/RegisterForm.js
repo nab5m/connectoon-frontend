@@ -1,14 +1,15 @@
 import React, {useState} from 'react';
-import { withCookies } from 'react-cookie';
 import classNames from "classnames";
 import {NavLink} from "react-router-dom";
-import {finishLoginRegisterRequest, handleRegisterRequest} from "../../client/LoginRegisterApi";
+import {observer} from "mobx-react";
+import useStores from "../../stores/useStores";
 
-const RegisterForm = ({history, cookies}) => {
+const RegisterForm = () => {
     const STORY_AUTHOR_ID = 1;
     const IMAGE_AUTHOR_ID = 2;
     const [role, setRole] = useState(STORY_AUTHOR_ID);
     const [error, setError] = useState({});
+    const {loginRegisterStore} = useStores();
 
     const changeRole = (selectedRole) => {
         if(role !== selectedRole) {
@@ -25,12 +26,8 @@ const RegisterForm = ({history, cookies}) => {
         const email = e.target.querySelector('input[name=email]').value
             + domainSelect.options[domainSelect.selectedIndex].value;
 
-        handleRegisterRequest(role, username, password, name, email).then((result) => {
-            if(result.success) {
-                cookies.set('token', result.data);
-                history.push('/');
-                finishLoginRegisterRequest();
-            } else {
+        loginRegisterStore.handleRegisterRequest(role, username, password, name, email).then((result) => {
+            if(!result.success) {
                 setError(result.data);
             }
         });
@@ -133,4 +130,4 @@ const RegisterForm = ({history, cookies}) => {
     );
 };
 
-export default withCookies(RegisterForm);
+export default observer(RegisterForm);

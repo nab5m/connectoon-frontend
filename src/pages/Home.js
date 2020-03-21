@@ -1,13 +1,13 @@
 import React, {Fragment} from 'react';
-import { withCookies } from 'react-cookie';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
-import {getUserProfile, isAuthenticated} from "../client/LoginRegisterApi";
+import {observer} from "mobx-react";
+import useStores from "../stores/useStores";
 
-const Home = ({history, cookies}) => {
-    isAuthenticated(cookies, history);
-    const userProfile = getUserProfile();
+const Home = () => {
+    const {loginRegisterStore} = useStores();
+    const userProfile = loginRegisterStore.userProfile;
 
     return (
         <Fragment>
@@ -21,4 +21,4 @@ const Home = ({history, cookies}) => {
     );
 };
 
-export default withCookies(Home);
+export default observer(Home);
