@@ -3,7 +3,7 @@ import axios from 'axios';
 import Cookie from 'mobx-cookie';
 
 const DEBUG = true;
-const PRODUCTION_SERVER_URL = 'http://localhost:8000/';
+const PRODUCTION_SERVER_URL = 'http://ec2-15-165-171-10.ap-northeast-2.compute.amazonaws.com:8080/';
 const DEVELOP_SERVER_URL = 'http://localhost:8000/';
 
 const getServerUrl = () => {
