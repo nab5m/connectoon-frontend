@@ -5,6 +5,7 @@ import {Login, Register} from "../pages";
 import Home from "../pages/Home";
 import {observer} from "mobx-react";
 import useStores from "../stores/useStores";
+import Custom404 from "../pages/Custom404";
 
 function App() {
     const {loginRegisterStore} = useStores();
@@ -22,6 +23,7 @@ function App() {
                     loginRegisterStore.token ? <Redirect to="/" /> : <Register />
                 }
             </Route>
+            <Route path='*' component={Custom404} />
         </div>
     );
 }
