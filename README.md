@@ -1,7 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 커넥툰
 
-## Available Scripts
+Demo: [커넥툰 정적 파일 서버](http://connectoon.surge.sh)
 
+## 배포 과정
+- loginRegisterStore.js의 서버 Url과 DEBUG 상수 변경
+
+## 만들면서 배운 점
+- 404.html을 만들고 빌드 후 build/index.html의 내용을 build/404.html로 복사하면 /뿐만 아니라 /login, /register로 접속하는 경우에도 대처 가능하다.
+
+## 리액트 스크립트
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). <br>
 In the project directory, you can run:
 
 ### `yarn start`
