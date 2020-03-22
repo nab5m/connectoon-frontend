@@ -1,0 +1,15 @@
+.welcome {
+    padding: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .welcome {
+        padding: 20px;
+    }
+}

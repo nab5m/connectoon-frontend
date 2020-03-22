@@ -48,12 +48,13 @@ form input {
 }
 
 .user-role-container {
+    display: flex;
+    justify-content: center;
     padding: 60px 70px;
 }
 
 .user-role {
     display: inline-block;
-    width: 130px;
     text-align: center;
 }
 .user-role:first-child {
@@ -62,6 +63,8 @@ form input {
 
 .icon-wrapper {
     display: flex;
+    box-sizing: border-box;
+    width: 130px;
     height: 130px;
     margin-bottom: 15px;
     border-radius: 65px;
@@ -99,4 +102,31 @@ form input {
 
 .error-text {
     padding: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 100%;
+        padding: 40px 40px;
+    }
+    .email-input-container input {
+        margin-bottom: 10px;
+    }
+    .email-input-container select {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    form {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .user-role:first-child {
+        margin-right: 30px;
+    }
+    .icon-wrapper {
+        width: 110px;
+        height: 110px;
+    }
 }
