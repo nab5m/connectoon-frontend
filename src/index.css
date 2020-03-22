@@ -5,11 +5,13 @@ body {
     margin: 0;
     color: #767676;
     font-size: 14px;
-    font-family: NotoSansCJKkr, 'Noto Sans KR', Verdana, sans-serif;
+    font-family: NotoSansCJKkr, 'Noto Sans KR', Verdana, sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    line-height: normal;
 }
 
+h1, h2 { font-weight: bold; }
 h1 { font-size: 23px; }
 h2 { font-size: 20px; }
 
