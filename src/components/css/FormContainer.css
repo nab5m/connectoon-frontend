@@ -5,3 +5,9 @@
     height: 1340px;
     padding: 60px;
 }
+
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 40px 10px;
+    }
+}

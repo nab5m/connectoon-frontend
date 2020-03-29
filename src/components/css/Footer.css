@@ -13,4 +13,41 @@
     font-size: 9px;
     font-weight: normal;
     line-height: 17px;
+    word-break: keep-all;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer h1 {
+        margin-right: 20px;
+        flex: 2;
+    }
+    .footer p {
+        flex: 10;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 23px 30px;
+    }
+    .footer h1 {
+        margin-right: 20px;
+        flex: 2;
+    }
+    .footer p {
+        flex: 10;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 23px 20px;
+    }
+    .footer h1 {
+        margin-right: 10px;
+        flex: 2;
+    }
+    .footer p {
+        flex: 5;
+    }
 }

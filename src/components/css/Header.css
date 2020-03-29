@@ -1,3 +1,7 @@
+#navbarSupportedContent {
+    width: fit-content;
+}
+
 .header {
     display: flex;
     padding: 23px 100px;
@@ -10,9 +14,36 @@
 .header nav {
     display: inline-flex;
     align-items: center;
-    margin-left: auto;
 }
 
 .header li {
     margin-left: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header li {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 23px 30px;
+    }
+    .header li {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    .header {
+        padding: 23px 20px;
+    }
+    .navbar-nav {
+        margin: 0 !important;
+    }
+    .header li {
+        margin-left: 20px;
+        padding: 5px 0;
+    }
 }

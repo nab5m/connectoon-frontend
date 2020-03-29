@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import {observer} from "mobx-react";
 import useStores from "../stores/useStores";
+import './Home.css';
 
 const Home = () => {
     const {loginRegisterStore} = useStores();
@@ -13,7 +14,7 @@ const Home = () => {
         <Fragment>
             <Header />
             <Banner />
-            <div style={{margin: '100px'}}>
+            <div className="welcome">
                 { userProfile ? <h1>안녕하세요 {userProfile.username}님</h1> : <h1>홈 페이지</h1> }
             </div>
             <Footer />
