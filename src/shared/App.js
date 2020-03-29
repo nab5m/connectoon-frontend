@@ -13,7 +13,7 @@ function App() {
         <div>
             <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/view-work" component={ViewWork} />
+                <Route path="/view-work" component={ViewWork} />
                 <Route exact path="/login">
                     {
                         loginRegisterStore.token ? <Redirect to="/" /> : <Login />

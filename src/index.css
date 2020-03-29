@@ -24,6 +24,11 @@ li {
     list-style: none;
 }
 
+a:hover {
+    color: #43e39f;
+    text-decoration: none;
+}
+
 .aqua-marine { color: #43e39f; }
 .gray { color: #767676; }
 .black { color: #000; }

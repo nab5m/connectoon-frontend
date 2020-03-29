@@ -7,7 +7,7 @@ import Banner from "../components/Banner";
 const ViewWork = () => {
     return (
         <Fragment>
-            <Header />
+            <Header activeNavigation={0} />
             <Banner />
             <WorkList />
             <Footer />
