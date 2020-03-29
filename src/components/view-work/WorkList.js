@@ -7,11 +7,16 @@ import {withRouter} from "react-router-dom";
 
 const WorkList = ({location}) => {
     let CardList = null;
-    const lastPathName = location.pathname.split('/').pop();
-    if (lastPathName === 'story') {
+
+    // default: /view-work/story/all
+    let pathNames =  location.pathname.split('/');
+    const subCategory = pathNames.pop();
+    const mainCategory = pathNames.pop();
+
+    if (mainCategory === 'story') {
         CardList = StoryCardList();
     }
-    else if(lastPathName === 'artwork') {
+    else if(mainCategory === 'artwork') {
         CardList = ArtworkCardList();
     }
     else {
@@ -20,8 +25,8 @@ const WorkList = ({location}) => {
 
     return (
         <Fragment>
-            <MainCategory />
-            <SubCategory />
+            <MainCategory current={mainCategory} />
+            <SubCategory current={subCategory} />
             {CardList}
         </Fragment>
     );
