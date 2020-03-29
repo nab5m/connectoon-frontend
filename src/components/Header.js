@@ -9,7 +9,7 @@ import {loadUser} from "../stores/LoginRegisterStore";
 const Header = ({activeNavigation = -1}) => {
     let navigation = null;
     let navigationItems = [
-        {url: "/artwork", title: "작품보기", active: false},
+        {url: "/view-work", title: "작품보기", active: false},
         {url: "/find-author", title: "작가찾기", active: false},
         {url: "/new-webtoon", title: "탄생웹툰", active: false},
         {url: "/login", title: "로그인/회원가입", active: false},
