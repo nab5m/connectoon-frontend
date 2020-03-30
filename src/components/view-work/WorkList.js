@@ -26,7 +26,7 @@ const WorkList = ({location}) => {
     return (
         <Fragment>
             <MainCategory current={mainCategory} />
-            <SubCategory current={subCategory} />
+            <SubCategory mainCategory={mainCategory} current={subCategory} />
             {CardList}
         </Fragment>
     );
