@@ -5,10 +5,13 @@
 
 .mainCategory li {
     display: inline-block;
+    margin-right: 40px;
+}
+.mainCategory li a {
+    display: inline-block;
     padding: 12px 18px;
     font-size: 18px;
     font-weight: bold;
-    margin-right: 40px;
 }
 .active {
     color: black;

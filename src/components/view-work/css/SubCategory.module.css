@@ -4,6 +4,9 @@
 }
 .subCategory li {
     display: inline-block;
+}
+.subCategory li a {
+    display: inline-block;
     border-radius: 28px;
     margin-right: 24px;
     padding: 14px 24px;
@@ -11,7 +14,7 @@
 
     font-weight: bold;
 }
-.active {
+.active a {
     background-color: #43e39f !important;
     color: white;
 }
