@@ -61,7 +61,7 @@ const SubCategory = ({match, mainCategory, current}) => {
             <li key={item.id} className={styles.active}>
                 <NavLink exact to={item.url}>{item.title}</NavLink>
             </li> :
-            <li>
+            <li key={item.id}>
                 <NavLink exact to={item.url}>{item.title}</NavLink>
             </li>;
     });
