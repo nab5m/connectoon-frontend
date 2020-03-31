@@ -1,6 +1,7 @@
 import React, {useState} from "react";
-import styles from './css/WorkPaging.module.css';
+import classNames from 'classnames';
 import {NavLink, withRouter} from "react-router-dom";
+import styles from './css/WorkPaging.module.css';
 
 const WorkPaging = ({location}) => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -37,7 +38,7 @@ const WorkPaging = ({location}) => {
     });
 
     return (
-        <ul className={styles.container}>
+        <ul className={classNames("col-xs-12", styles.container)}>
             <li>
                 <NavLink
                     to={`${location.pathname}?page=${pageStart - 1}`}
