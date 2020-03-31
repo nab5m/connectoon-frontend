@@ -6,8 +6,8 @@ const StoryCardItem = ({chapter, title, subCategory, description, backgroundImag
                            likeCount, replyCount}) =>
 {
     return (
-        <div className={classNames("col-xl-3", "col-lg-4", "col-md-6", "mb-4")}>
-            <div className={styles.container} style={{backgroundImage: `url(${backgroundImageUrl})`}}>
+        <div className={classNames("col-xl-3", "col-lg-4", "col-md-6", "col-sm-6", "mb-4")}>
+            <div className={styles.cardBody} style={{backgroundImage: `url(${backgroundImageUrl})`}}>
                 <div className={styles.wrapper}>
                     <div className={styles.workIntro}>
                         <p>{chapter}</p>
