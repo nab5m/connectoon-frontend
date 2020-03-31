@@ -1,0 +1,65 @@
+.cardBody {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.workIntro {
+    font-size: 36px;
+    font-family: 'KimNamyun', Verdana, sans-serif;
+    padding: 24px 0;
+}
+
+.division {
+    width: 20%;
+    margin: 0 auto;
+    border-width: 2px;
+    border-color: white;
+}
+
+.workDescription, .authorProfile {
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+.workDescription {
+    padding: 24px 24px;
+    word-break: keep-all;
+}
+
+.authorProfile {
+    padding: 28px 0;
+}
+
+.authorProfile img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .cardBody, .cardFooter {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .cardBody {
+        padding-top: 90%;
+    }
+}

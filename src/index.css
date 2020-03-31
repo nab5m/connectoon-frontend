@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
+
+@font-face {
+    font-family: 'KimNamyun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KimNamyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     margin: 0;
@@ -9,6 +16,10 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: normal;
+}
+
+.row {
+    margin: 0 !important;
 }
 
 h1, h2 { font-weight: bold; }
@@ -22,6 +33,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 
 li {
     list-style: none;
+}
+
+a:hover {
+    color: #43e39f;
+    text-decoration: none;
 }
 
 .aqua-marine { color: #43e39f; }

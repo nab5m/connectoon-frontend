@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
 import {Redirect, Route, Switch} from "react-router-dom";
-import {Login, Register} from "../pages";
-import Home from "../pages/Home";
+import {Home, Login, Register, ViewWork} from "../pages";
 import {observer} from "mobx-react";
 import useStores from "../stores/useStores";
 import Custom404 from "../pages/Custom404";
@@ -14,6 +13,7 @@ function App() {
         <div>
             <Switch>
                 <Route exact path="/" component={Home} />
+                <Route path="/view-work" component={ViewWork} />
                 <Route exact path="/login">
                     {
                         loginRegisterStore.token ? <Redirect to="/" /> : <Login />

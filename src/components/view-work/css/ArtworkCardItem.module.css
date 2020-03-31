@@ -1,0 +1,32 @@
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.thumbnailWrapper img {
+    width: 100%;
+    height: auto;
+}
+.workInfo {
+    padding: 16px;
+    border: solid 1px #e6e6e6;
+    border-bottom: none;
+}
+.workInfo h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    word-break: keep-all;
+    line-height: 24px;
+}
+.authorProfile {
+    margin-top: 12px;
+    font-size: 12px;
+}
+.authorProfile img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}

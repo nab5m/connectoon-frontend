@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../css/LoginRegisterForm.css';
+import './css/LoginRegisterForm.css';
 import classNames from 'classnames';
 import {NavLink} from "react-router-dom";
 import {observer} from "mobx-react";

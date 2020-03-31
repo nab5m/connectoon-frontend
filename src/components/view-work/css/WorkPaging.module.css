@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 140px;
+    padding-bottom: 200px;
+}
+
+.container li a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin: 0 4px;
+    border: solid 1px #e8e9ec;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.activePage a {
+    background-color: #43e39f;
+    color: white;
+}
