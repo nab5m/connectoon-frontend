@@ -17,3 +17,10 @@
     color: black;
     border-bottom: 5px solid #43e39f;
 }
+
+@media screen and (max-width: 768px) {
+    .mainCategory {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
