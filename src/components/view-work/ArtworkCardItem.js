@@ -6,7 +6,7 @@ const ArtworkCardItem = ({title, thumbnailImageUrl, profileImageUrl, authorName
                              , likeCount, replyCount}) =>
 {
     return (
-        <div className={classNames("col-xl-3", "col-lg-4", "col-md-6", "mb-4")}>
+        <div className={classNames(styles.container, "col-xl-3", "col-lg-4", "col-md-6", "mb-4")}>
             <div className={styles.thumbnailWrapper}>
                 <img src={thumbnailImageUrl} alt="썸네일" />
             </div>
