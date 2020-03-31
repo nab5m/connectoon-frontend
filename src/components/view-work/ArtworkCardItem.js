@@ -1,6 +1,7 @@
 import React from "react";
 import classNames from 'classnames';
 import styles from './css/ArtworkCardItem.module.css';
+import cardFooterStyles from './css/CardFooter.module.css';
 
 const ArtworkCardItem = ({title, thumbnailImageUrl, profileImageUrl, authorName
                              , likeCount, replyCount}) =>
@@ -17,9 +18,9 @@ const ArtworkCardItem = ({title, thumbnailImageUrl, profileImageUrl, authorName
                     <span>{authorName}</span>
                 </div>
             </div>
-            <div className={styles.cardFooter}>
+            <div className={cardFooterStyles.cardFooter}>
                 <img src="/images/heart_select.svg" alt="좋아요" />
-                <span className={styles.likeCount}>{likeCount}</span>
+                <span className={cardFooterStyles.likeCount}>{likeCount}</span>
 
                 <img src="/images/reply.svg" alt="댓글" />
                 <span>{replyCount >= 1000 ? '999+' : replyCount}</span>

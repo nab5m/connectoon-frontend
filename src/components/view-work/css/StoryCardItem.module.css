@@ -54,21 +54,6 @@
     margin-right: 10px;
 }
 
-.cardFooter {
-    padding: 16px;
-    border: solid 1px #e6e6e6;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: right;
-}
-.cardFooter img {
-    vertical-align: text-bottom;
-    cursor: pointer;
-}
-.likeCount {
-    margin-right: 15px;
-}
-
 @media screen and (max-width: 576px) {
     .cardBody, .cardFooter {
         width: 90%;

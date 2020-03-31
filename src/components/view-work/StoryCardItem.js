@@ -1,6 +1,7 @@
 import React from "react";
 import classNames from 'classnames';
 import styles from './css/StoryCardItem.module.css';
+import cardFooterStyles from './css/CardFooter.module.css';
 
 const StoryCardItem = ({chapter, title, subCategory, description, backgroundImageUrl, profileImageUrl, authorName,
                            likeCount, replyCount}) =>
@@ -24,9 +25,9 @@ const StoryCardItem = ({chapter, title, subCategory, description, backgroundImag
                     </div>
                 </div>
             </div>
-            <div className={styles.cardFooter}>
+            <div className={classNames(styles.cardFooter, cardFooterStyles.cardFooter)}>
                 <img src="/images/heart_select.svg" alt="좋아요" />
-                <span className={styles.likeCount}>{likeCount}</span>
+                <span className={cardFooterStyles.likeCount}>{likeCount}</span>
 
                 <img src="/images/reply.svg" alt="댓글" />
                 <span>{replyCount >= 1000 ? '999+' : replyCount}</span>
