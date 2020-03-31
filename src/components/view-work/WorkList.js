@@ -13,13 +13,11 @@ const WorkList = ({location}) => {
     const subCategory = pathNames.pop();
     const mainCategory = pathNames.pop();
 
-    if (mainCategory === 'story') {
-        CardList = StoryCardList();
-    }
-    else if(mainCategory === 'artwork') {
+    if(mainCategory === 'artwork') {
         CardList = ArtworkCardList();
     }
     else {
+        // default
         CardList = StoryCardList();
     }
 
