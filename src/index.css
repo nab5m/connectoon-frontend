@@ -18,6 +18,10 @@ body {
     line-height: normal;
 }
 
+.row {
+    margin: 0 !important;
+}
+
 h1, h2 { font-weight: bold; }
 h1 { font-size: 23px; }
 h2 { font-size: 20px; }
